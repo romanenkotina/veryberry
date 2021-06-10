@@ -120,7 +120,7 @@ nav {
 
 	width: 15px;
 	height: 25px;
-	background-image: url("../img/straw-arrow.svg");
+	background-image: url("img/straw-arrow.svg");
 	background-repeat: no-repeat;
 }
 
@@ -160,7 +160,7 @@ nav {
 .intro {
 	min-height: 80vh;
 
-	background-image: url(/img/intro.jpg);
+	background-image: url(img/intro.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
