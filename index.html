@@ -24,7 +24,7 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-xl-5 logo">
+				<div class="order-1 col-10 col-md-4 col-xl-5 logo">
 					<a href="#">
 						<img src="img/logo.png" alt="Студия красоты Very Berry">
 					</a>
@@ -36,8 +36,8 @@
 					</div>
 				</div>
 
-				<nav class="col-md-6 col-xl-7">
-					<ul class="menu">
+				<nav class="order-3 col-md-8 col-xl-7">
+					<ul id="mainMenu" class="menu">
 						<li>
 							<a href="#promotion">акции</a>
 						</li>
@@ -63,22 +63,23 @@
 								<li><a href="dummy.html">блог</a></li>
 							</ul>
 						</li>
-						<!-- <li class="sub-menu">
-							<a href="#">косметика</a>
+						<li class="sub-menu">
+							<a href="dummy.html">косметика</a>
 							<ul>
-								<li><a href="#">Kevin Murphy</a></li>
-								<li><a href="#">System Professional</a></li>
-								<li><a href="#">Oribe</a></li>
-								<li><a href="#">Wella Oil Reflections</a></li>
-								<li><a href="#">Olaplex</a></li>
-								<li><a href="#">Nashi Argan</a></li>
+								<li><a href="dummy.html">Kevin Murphy</a></li>
+								<li><a href="dummy.html">System Professional</a></li>
+								<li><a href="dummy.html">Oribe</a></li>
+								<li><a href="dummy.html">Wella Oil Reflections</a></li>
+								<li><a href="dummy.html">Olaplex</a></li>
+								<li><a href="dummy.html">Nashi Argan</a></li>
 							</ul>
-						</li> -->
+						</li>
 						<li>
 							<a href="#contacts">контакты</a>
 						</li>
 					</ul>
 				</nav>
+				<button id="btnMobile" class="btn-mobile d-md-none col-2 order-2"></button>
 			</div>
 		</div>
 	</header>
@@ -86,84 +87,85 @@
 
 	<main>
 
+		<div class="popup-fade">
+			<div class="popup">
+				<button class="close">x</button>
+				<h2>заглушка</h2>
+			</div>
+		</div>
+
 		<!-- -------- ПРИВЕТСТВИЕ НАЧАЛО -------- -->
 		<section class="intro">
 			<div class="container">
-				<p>ягодное разнообразие в твоих волосах</p>
-				<div class="popup popup-fade">
-					<h2>заглушка</h2>
-					<button class="close">Закрыть</button>
-				</div>
-				<a id="agecheck" class="btn btn-lg btn-danger btn-booking">запись онлайн</a>
+				<p class="intro-text">ягодное разнообразие в твоих волосах</p>
+				<a id="btnBooking" class="btn btn-lg btn-danger btn-booking">запись онлайн</a>
 			</div>
 
 		</section>
 		<!-- ПРИВЕТСТВИЕ КОНЕЦ -->
 
-		<button class="arrowtop popup-fade"></button>
+		<button class="arrowtop hidden"></button>
 
 		<!-- -------- АКЦИИ НАЧАЛО -------- -->
 		<section id="promotion" class="promotion">
 			<div class="container">
 				<h2 class="title">акции</h2>
 				<div class="row">
-					<div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+					<div id="promoCarousel" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner" role="listbox">
-							<div class="carousel-item promo1 active">
+							<div class="carousel-item active">
 								<div class="col-md-6 col-xl-4">
 									<img class="img-fluid" src="img/slide1.jpg">
+									<div class="promo-text">
+										<h3>Четыре = пять</h3>
+										<p>Каждая пятая услуга маникюра бесплатно</p>
+									</div>
 								</div>
 							</div>
-							<div class="carousel-item promo2">
+							<div class="carousel-item">
 								<div class="col-md-6 col-xl-4">
 									<img class="img-fluid" src="img/slide2.jpg">
+									<div class="promo-text">
+										<h3>Мужской день</h3>
+										<p>По средам скидка 15% на все мужские стрижки и укладки</p>
+									</div>
 								</div>
 							</div>
-							<div class="carousel-item promo3">
+							<div class="carousel-item">
 								<div class="col-md-6 col-xl-4">
 									<img class="img-fluid" src="img/slide3.jpg">
+									<div class="promo-text">
+										<h3>Макияж в подарок на день рождения</h3>
+										<p>3 дня до и 3 дня после дня рождения</p>
+									</div>
 								</div>
 							</div>
-							<div class="carousel-item promo4">
+							<div class="carousel-item">
 								<div class="col-md-6 col-xl-4">
 									<img class="img-fluid" src="img/slide4.jpg">
+									<div class="promo-text">
+										<h3>Ваш идеальный цвет</h3>
+										<p>Наши мастера бесплатно подберут идеальный цвет волос для вас</p>
+									</div>
 								</div>
 							</div>
-							<div class="carousel-item promo5">
+							<div class="carousel-item">
 								<div class="col-md-6 col-xl-4">
 									<img class="img-fluid" src="img/slide5.jpg">
+									<div class="promo-text">
+										<h3>Лучшие друзья</h3>
+										<p>Пригласи друга - скидка 10% или уход в подарок</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="offset-md-6 col-md-6 offset-xl-2 col-xl-8">
-					<div class="promo-text promo-text1">
-						<h3>Макияж в подарок на день рождения</h3>
-						<p>3 дня до и 3 дня после дня рождения</p>
-					</div>
-					<div class="promo-text promo-text2">
-						<h3>Ваш идеальный цвет</h3>
-						<p>Наши мастера бесплатно подберут идеальный цвет волос для вас</p>
-					</div>
-					<div class="promo-text promo-text3">
-						<h3>Лучшие друзья</h3>
-						<p>Пригласи друга - скидка 10% или уход в подарок</p>
-					</div>
-					<div class="promo-text promo-text4">
-						<h3>Четыре = пять</h3>
-						<p>Каждая пятая услуга маникюра бесплатно</p>
-					</div>
-					<div class="promo-text promo-text5 promo-text-active">
-						<h3>Мужской день</h3>
-						<p>По средам скидка 15% на все мужские стрижки и укладки</p>
-					</div>
-				</div>
 				<div class="promotion-controls">
 					<div class="row col-12 col-md-6 col-xl-4">
-						<button class="promotion-control promotion-control-prev" href="#recipeCarousel" data-slide="prev">
+						<button class="promotion-control promotion-control-prev" href="#promoCarousel" data-slide="prev">
 						</button>
-						<button class="promotion-control promotion-control-next" href="#recipeCarousel" data-slide="next">
+						<button class="promotion-control promotion-control-next" href="#promoCarousel" data-slide="next">
 						</button>
 					</div>
 				</div>
@@ -361,14 +363,14 @@
 				<!-- ------ ОТЗЫВЫ НАЧАЛО ------ -->
 				<div class="reviews">
 					<div class="row">
-						<section class="review сol-md-12 col-lg-4">
+						<section class="review col-12 col-lg-4">
 							<img src="img/stars.svg" alt="">
 							<blockquote>Освежили мой розовый и постригли. Довольна качеством обслуживания,
 								мастер посоветовала маску для моих окрашенных волос. Планирую прийти снова :)
 							</blockquote>
 							<cite>Надя Демидова</cite>
 						</section>
-						<section class="review сol-md-12 col-lg-4">
+						<section class="review col-12 col-lg-4">
 							<img src="img/stars.svg" alt="">
 							<blockquote>С 2017 года крашусь только в very berry и я ни разу еще не подумывала о смене студии. У вас
 								всегда
@@ -377,9 +379,10 @@
 							</blockquote>
 							<cite>Ксения Горбатенко</cite>
 						</section>
-						<section class="review сol-md-12 col-lg-4">
+						<section class="review col-12 col-lg-4">
 							<img src="img/stars.svg" alt="">
-							<blockquote>Решила покраситься в разноцветный, но не представляла даже, что получится из этого. покрасили
+							<blockquote>Решила покраситься в разноцветный, но не представляла даже, что получится из этого.
+								покрасили
 								меня так, что довольными остались и те, кто был против моей затеи! Спасибо большое)))
 							</blockquote>
 							<cite>Jenni Lapanik</cite>
@@ -494,12 +497,12 @@
 					<iframe
 						src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac8947fd040549b93ac9a49443f87a1d3b07923b61ada69ae6d213b955fad517b&amp;source=constructor"
 						width="550" height="400" frameborder="10"></iframe>
-					<div class="contacts-info">
-						<p>Москва<br>ул. Генерала Белова, 8</p>
-						<p>8 499 123-45-67</p>
-						<p>me@tina.ru</p>
-						<p>10:00 — 22:00<br>сб - вс 11:00 — 23:00</p>
-					</div>
+					<ul class="col-12 col-md-3 contacts-info">
+						<li>Москва<br>ул. Генерала Белова, 8</li>
+						<li>8 499 123-45-67</li>
+						<li>me@tina.ru</li>
+						<li>10:00 — 22:00<br>сб - вс 11:00 — 23:00</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -521,10 +524,10 @@
 	</footer>
 	<!-- ПОДВАЛ КОНЕЦ -->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-	<script src="carousel.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
